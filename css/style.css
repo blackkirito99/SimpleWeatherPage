@@ -1,0 +1,221 @@
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  font-size: 5rem; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 2rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 2rem )/2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2*2rem)/3); }
+  .row .col-2-of-3 {
+    width: calc(2 * (100% - 2*2rem)/3 + 2rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3*2rem)/4); }
+  .row .col-2-of-4 {
+    width: calc(2 * (100% - 3*2rem)/4 + 2rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * (100% - 3*2rem)/4 + 2*2rem); }
+  .row .col-1-of-5 {
+    width: calc((100% - 4*2rem)/5); }
+  .row .col-2-of-5 {
+    width: calc(2 * (100% - 4*2rem)/5 + 2rem); }
+  .row .col-3-of-5 {
+    width: calc(3 * (100% - 4*2rem)/5 + 2*2rem); }
+  .row .col-4-of-5 {
+    width: calc(4 * (100% - 4*2rem)/5 + 3*2rem); }
+  .row .col-1-of-6 {
+    width: calc((100% - 5*2rem)/6); }
+  .row .col-2-of-6 {
+    width: calc(2 * (100% - 5*2rem)/6 + 2rem); }
+  .row .col-3-of-6 {
+    width: calc(3 * (100% - 5*2rem)/6 + 2*2rem); }
+  .row .col-4-of-6 {
+    width: calc(4 * (100% - 5*2rem)/6 + 3*2rem); }
+  .row .col-5-of-6 {
+    width: calc(5 * (100% - 5*2rem)/6 + 4*2rem); }
+  .row .col-1-of-7 {
+    width: calc((100% - 6*2rem)/7); }
+  .row .col-2-of-7 {
+    width: calc(2 * (100% - 6*2rem)/7 + 2rem); }
+  .row .col-3-of-7 {
+    width: calc(3 * (100% - 6*2rem)/7 + 2*2rem); }
+  .row .col-4-of-7 {
+    width: calc(4 * (100% - 6*2rem)/7 + 3*2rem); }
+  .row .col-5-of-7 {
+    width: calc(5 * (100% - 6*2rem)/7 + 4*2rem); }
+  .row .col-6-of-7 {
+    width: calc(6 * (100% - 6*2rem)/7 + 5*2rem); }
+  .row .col-1-of-8 {
+    width: calc((100% - 7*2rem)/8); }
+  .row .col-2-of-8 {
+    width: calc(2 * (100% - 7*2rem)/8 + 2rem); }
+  .row .col-3-of-8 {
+    width: calc(3 * (100% - 7*2rem)/8 + 2*2rem); }
+  .row .col-4-of-8 {
+    width: calc(4 * (100% - 7*2rem)/8 + 3*2rem); }
+  .row .col-5-of-8 {
+    width: calc(5 * (100% - 7*2rem)/8 + 4*2rem); }
+  .row .col-6-of-8 {
+    width: calc(6 * (100% - 7*2rem)/8 + 5*2rem); }
+  .row .col-7-of-8 {
+    width: calc(7 * (100% - 7*2rem)/8 + 6*2rem); }
+  .row .col-1-of-9 {
+    width: calc((100% - 8*2rem)/9); }
+  .row .col-2-of-9 {
+    width: calc(2 * (100% - 8*2rem)/9 + 2rem); }
+  .row .col-3-of-9 {
+    width: calc(3 * (100% - 8*2rem)/9 + 2*2rem); }
+  .row .col-4-of-9 {
+    width: calc(4 * (100% - 8*2rem)/9 + 3*2rem); }
+  .row .col-5-of-9 {
+    width: calc(5 * (100% - 8*2rem)/9 + 4*2rem); }
+  .row .col-6-of-9 {
+    width: calc(6 * (100% - 8*2rem)/9 + 5*2rem); }
+  .row .col-7-of-9 {
+    width: calc(7 * (100% - 8*2rem)/9 + 6*2rem); }
+  .row .col-8-of-9 {
+    width: calc(8 * (100% - 8*2rem)/9 + 7*2rem); }
+  .row .col-1-of-10 {
+    width: calc((100% - 9*2rem)/10); }
+  .row .col-2-of-10 {
+    width: calc(2 * (100% - 9*2rem)/10 + 2rem); }
+  .row .col-3-of-10 {
+    width: calc(3 * (100% - 9*2rem)/10 + 2*2rem); }
+  .row .col-4-of-10 {
+    width: calc(4 * (100% - 9*2rem)/10 + 3*2rem); }
+  .row .col-5-of-10 {
+    width: calc(5 * (100% - 9*2rem)/10 + 4*2rem); }
+  .row .col-6-of-10 {
+    width: calc(6 * (100% - 9*2rem)/10 + 5*2rem); }
+  .row .col-7-of-10 {
+    width: calc(7 * (100% - 9*2rem)/10 + 6*2rem); }
+  .row .col-8-of-10 {
+    width: calc(8 * (100% - 9*2rem)/10 + 7*2rem); }
+  .row .col-9-of-10 {
+    width: calc(9 * (100% - 9*2rem)/10 + 8*2rem); }
+  .row .col-1-of-11 {
+    width: calc((100% - 10*2rem)/11); }
+  .row .col-2-of-11 {
+    width: calc(2 * (100% - 10*2rem)/11 + 2rem); }
+  .row .col-3-of-11 {
+    width: calc(3 * (100% - 10*2rem)/11 + 2*2rem); }
+  .row .col-4-of-11 {
+    width: calc(4 * (100% - 10*2rem)/11 + 3*2rem); }
+  .row .col-5-of-11 {
+    width: calc(5 * (100% - 10*2rem)/11 + 4*2rem); }
+  .row .col-6-of-11 {
+    width: calc(6 * (100% - 10*2rem)/11 + 5*2rem); }
+  .row .col-7-of-11 {
+    width: calc(7 * (100% - 10*2rem)/11 + 6*2rem); }
+  .row .col-8-of-11 {
+    width: calc(8 * (100% - 10*2rem)/11 + 7*2rem); }
+  .row .col-9-of-11 {
+    width: calc(9 * (100% - 10*2rem)/11 + 8*2rem); }
+  .row .col-10-of-11 {
+    width: calc(10 * (100% - 10*2rem)/11 + 9*2rem); }
+  .row .col-1-of-12 {
+    width: calc((100% - 11*2rem)/12); }
+  .row .col-2-of-12 {
+    width: calc(2 * (100% - 11*2rem)/12 + 2rem); }
+  .row .col-3-of-12 {
+    width: calc(3 * (100% - 11*2rem)/12 + 2*2rem); }
+  .row .col-4-of-12 {
+    width: calc(4 * (100% - 11*2rem)/12 + 3*2rem); }
+  .row .col-5-of-12 {
+    width: calc(5 * (100% - 11*2rem)/12 + 4*2rem); }
+  .row .col-6-of-12 {
+    width: calc(6 * (100% - 11*2rem)/12 + 5*2rem); }
+  .row .col-7-of-12 {
+    width: calc(7 * (100% - 11*2rem)/12 + 6*2rem); }
+  .row .col-8-of-12 {
+    width: calc(8 * (100% - 11*2rem)/12 + 7*2rem); }
+  .row .col-9-of-12 {
+    width: calc(9 * (100% - 11*2rem)/12 + 8*2rem); }
+  .row .col-10-of-12 {
+    width: calc(10 * (100% - 11*2rem)/12 + 9*2rem); }
+  .row .col-11-of-12 {
+    width: calc(11 * (100% - 11*2rem)/12 + 10*2rem); }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.cover {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to right bottom, #342aee, #8709e1);
+  background-size: cover;
+  position: relative; }
+
+.app {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.5); }
+  .app--weather {
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    width: 40rem;
+    font-size: 1.6rem; }
+    .app--weather .current {
+      padding: 2rem; }
+      .app--weather .current p {
+        display: inline-block; }
+      .app--weather .current__place {
+        font-size: 3rem;
+        margin-bottom: 0.5rem; }
+      .app--weather .current__weather {
+        font-size: 1.5rem; }
+      .app--weather .current__tempature {
+        font-size: 5rem;
+        font-weight: 100; }
+      .app--weather .current__icon {
+        float: left;
+        margin: 2rem 0 0 2rem;
+        font-size: 8rem; }
+      .app--weather .current__refresh {
+        float: right;
+        font-size: 1.6rem; }
+    .app--weather .today__overall {
+      margin-bottom: 1rem; }
+      .app--weather .today__overall__date {
+        float: left; }
+      .app--weather .today__overall__tempature {
+        float: right; }
+      .app--weather .today__overall::after {
+        content: "";
+        clear: both;
+        display: table; }
+    .app--weather .today__hourly {
+      list-style-type: none;
+      overflow: hidden; }
+      .app--weather .today__hourly li {
+        display: inline-block;
+        font-size: 2rem; }
+        .app--weather .today__hourly li:not(:last-child) {
+          margin-right: 2%; }
+    .app--weather .lowest-tempature {
+      color: #aaa; }
+    .app--weather .weekday {
+      font-weight: 700;
+      font-size: 2rem; }
