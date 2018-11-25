@@ -1,0 +1,124 @@
+
+$color-blue: rgb(52, 42, 238);
+$color-purple: rgb(135, 9, 225);
+
+$gutter-horizontal: 2rem;
+
+@import "./layout/grid";
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+.cover{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right bottom, $color-blue, $color-purple);
+    background-size: cover;
+    position: relative;
+}
+
+.app{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1rem 1rem 2rem rgba(#000000, $alpha: 0.5);
+
+    &--weather{
+        padding: 2rem;
+        background-color: rgba( #ffffff, $alpha: 0.8);
+        text-align: center;
+        width: 40rem;
+        font-size: 1.6rem;
+        & .current{
+            padding: 2rem;
+
+            & p{
+                display: inline-block;
+            }
+            &__place{
+                font-size: 3rem;
+                margin-bottom: 0.5rem;
+            }
+
+            &__weather{
+                font-size: 1.5rem;
+            }
+
+            &__tempature{
+                font-size: 5rem;
+                font-weight: 100;
+            }
+
+            &__icon{
+                float: left;
+                margin: 2rem 0 0 2rem;
+                font-size: 8rem;
+            }
+
+            &__refresh{
+                float: right;
+                font-size: 1.6rem;
+            }
+
+
+        }
+
+        & .today {
+
+            &__overall{
+                margin-bottom: 1rem;
+
+                &__date{
+                    float: left;
+                }
+
+                &__tempature{
+                    float: right;
+                }
+
+                &::after{
+                    content: "";
+                    clear: both;
+                    display: table;
+                }
+
+            }
+
+            &__hourly{
+                list-style-type: none;
+                overflow: hidden;
+                & li{
+                    display: inline-block;
+                    font-size: 2rem;
+                    
+                    &:not(:last-child){
+                        margin-right: 2%;
+                    }
+                }
+            }
+        }
+
+        & .lowest-tempature{
+            color: #aaa;
+        }
+        
+        & .weekday{
+            font-weight: 700;
+            font-size: 2rem;
+        }
+    }
+}
